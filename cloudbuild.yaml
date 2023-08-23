@@ -1,0 +1,15 @@
+steps:
+    - name: 'python'
+      entrypoint: 'python'
+      args: ['-m', 'pip', 'install', '--upgrade', 'pip']
+    - name: python
+      entrypoint: python
+      args: ['-m', 'pip', 'install', 'build', 'pytest', 'lxml','bs4','langchain','openai','tiktoken', '--user']
+    - name: 'python'
+      entrypoint: 'python'
+      args: ['-m', 'build']  
+
+artifacts:
+       pythonPackages:
+       - repository: 'https://europe-west2-docker.pkg.dev/langchain-docs-396117/summary-app-1'
+          paths: ['dist/*']     
