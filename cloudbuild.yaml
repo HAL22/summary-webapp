@@ -11,5 +11,5 @@
 
 artifacts:
        pythonPackages:
-       - repository: 'https://europe-west2-docker.pkg.dev/langchain-docs-396117/summary-app-1'
+       - repository: 'https://europe-west3-docker.pkg.dev/langchain-docs-396117/summary-app-2'
           paths: ['dist/*']             
